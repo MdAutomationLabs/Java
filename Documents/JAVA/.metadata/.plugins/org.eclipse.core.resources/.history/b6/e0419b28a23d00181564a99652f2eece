@@ -1,0 +1,52 @@
+package Final_Project;
+
+
+
+
+public class data {
+   node head;
+   public data(){
+	   
+   }
+   public void insert(int id, String firstName, String lastName, String position,
+			int salary, String startDate, String address, String city, int zip){
+	   
+	   node newNode = new node( id, firstName, lastName, position,
+				salary, startDate, address, city, zip); 
+	   
+			if(head == null){
+				head = newNode;
+				
+			}else{
+				newNode.next = head;
+				head = newNode;
+			}
+			}
+   public node delete() {  
+		node  removeNode = null; 
+		
+			if(head == null){
+				System.out.println("Queue is empty");
+		      	
+			}else{
+				removeNode = head;
+				head = head.next;
+				head.previous = null;
+			}
+		return removeNode;
+	}
+   public void print() { 
+		node add = head; 
+		if(add == null) 
+			System.out.println("Queue is empty");
+			else 
+				while (add != null){ // if any node exist 
+					System.out.println("Employee: "+add.getFirstName()+ add.getLastName()+add.getPosition()
+							+add.getSalary()+ add.getStartDate()+ add.getAddress()+ add.getCity()+ add.getZip());  
+					add = add.next; 
+				}
+		System.out.println("");
+		}
+	
+   }
+

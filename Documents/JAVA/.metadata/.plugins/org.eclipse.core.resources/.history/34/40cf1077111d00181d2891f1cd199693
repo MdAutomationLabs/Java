@@ -1,0 +1,65 @@
+
+public class queueNode {
+	
+    String data;
+    queueNode next;
+    queueNode previous;
+	/**
+	 * @param data
+	 * @param next
+	 */
+	public queueNode(String data) {
+		
+		this.data = data;
+		this.next = null;
+		this.previous = null;
+	}
+	/**
+	 * @return the data
+	 */
+	public String getData() {
+		return data;
+	}
+	/**
+	 * @param data the data to set
+	 */
+	public void setData(String data) {
+		this.data = data;
+	}
+	/**
+	 * @return the next
+	 */
+	public queueNode getNext() {
+		return next;
+	}
+	/**
+	 * @param next the next to set
+	 */
+	public void setNext(queueNode next) {
+		this.next = next;
+	}
+	/**
+	 * @return the previous
+	 */
+	public queueNode getPrevious() {
+		return previous;
+	}
+	/**
+	 * @param previous the previous to set
+	 */
+	public void setPrevious(queueNode previous) {
+		this.previous = previous;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	public String toString() {
+		return "queueNode [data=" + data + ", next=" + next + "]";
+	}
+	
+    
+    
+}

@@ -1,0 +1,48 @@
+
+public class queueNode {
+	
+   private String data;
+    queueNode next;
+    queueNode previous;
+    
+    /** default constructor
+	 */
+	public queueNode() {
+	}
+	
+	/**
+	 * @param data
+	 * @param next
+	 */
+	public queueNode(String data) {
+		this.data = data;
+		this.next = null;
+		this.previous = null;
+	}
+	
+	/**
+	 * @return the data
+	 */
+	public String getData() {
+		return data;
+	}
+	/**
+	 * @param data the data to set
+	 */
+	public void setData(String data) {
+		this.data = data;
+	}
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	public String toString() {
+		return "queueNode [" + data +"]";
+	}
+	
+    
+    
+}

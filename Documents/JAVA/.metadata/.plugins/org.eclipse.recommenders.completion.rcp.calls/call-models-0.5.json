@@ -1,0 +1,77 @@
+{
+  "C:\\Program Files\\Java\\jre1.8.0_131\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_131\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\PizzaAhmed\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\PizzaAhmed\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\PizzaAhmed\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jdk1.8.0_112\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jdk1.8.0_112\\jre\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\EFScale\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\EFScale\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\EFScale\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\TicketCounter\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\TicketCounter\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\TicketCounter\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\InheritanceAndPolymorphismDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\InheritanceAndPolymorphismDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\InheritanceAndPolymorphismDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\BasicOOAndEncapsulationDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\BasicOOAndEncapsulationDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\BasicOOAndEncapsulationDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\AbstractClassDataStracture\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\AbstractClassDataStracture\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\AbstractClassDataStracture\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\InterfacesAndPolymorphismDataStracture\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\InterfacesAndPolymorphismDataStracture\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\InterfacesAndPolymorphismDataStracture\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\StackAssignmentDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\StackAssignmentDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\StackAssignmentDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\LabPrintACallStackDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\LabPrintACallStackDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\LabPrintACallStackDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\TowersOfHanoiDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\TowersOfHanoiDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\TowersOfHanoiDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\QueueDataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\QueueDataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\QueueDataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Users\\MD AHMED\\Documents\\JAVA\\Final_Project_DataStructure\\src": {
+    "location": "C:\\Users\\MD AHMED\\Documents\\JAVA\\Final_Project_DataStructure\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\MD AHMED\\Documents\\JAVA\\Final_Project_DataStructure\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre1.8.0_201\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_201\\lib\\rt.jar",
+    "status": "RESOLVED"
+  }
+}

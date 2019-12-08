@@ -1,0 +1,17 @@
+import java.time.LocalDateTime;
+
+public class TimedResponseAhmed {
+
+	public static void main(String[] args) {
+		// Md Ahmed
+		LocalDateTime time1 = LocalDateTime.now();
+		int secs1 = time1.getSecond();
+		JOptionPane.showConfirmDialog(null,"Are you a closet Taylor Swift fan?");
+		LocalDateTime time2 = LocalDateTime.now();
+		int secs2 = time2.getSecond();
+		JOptionPane.showMessageDialog(null, "End seconds: " + secs2
+				+ "\nStart seconds: " + secs1 + "\nIt took " + difference
+				+ " seconds for you to answer.\nWas it a difficult decision?");
+	}
+
+}

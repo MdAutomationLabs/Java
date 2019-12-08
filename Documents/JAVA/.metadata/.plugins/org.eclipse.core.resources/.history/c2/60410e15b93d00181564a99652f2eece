@@ -1,0 +1,131 @@
+package Final_Project;
+
+
+
+public class data {
+	node head;
+	int size;
+	int max = 10;
+
+	public void insert(int id, String firstName, String lastName,
+			String position, int salary, String startDate, String address,
+			String city, int zip) {
+
+		node newNode = new node(id, firstName, lastName, position, salary,
+				startDate, address, city, zip);
+		try {
+			if (!isFull()) {
+				if (head == null) {
+					head = newNode;
+					size++;
+				} else {
+					newNode.next = head;
+					head = newNode;
+					size++;
+					node firstNode = head; 	
+                     node parent; // parent node created to
+                     while (true) { // when firstnode is root node
+                   parent = firstNode; // now parent node is firstnode
+             if (id <= firstNode.getId()) { // checking the upcoming id is
+									// large or small to located
+									// either left or right
+	             firstNode = firstNode.leftChild; // if less then root node go left
+	         if (firstNode == null) {
+		     parent.leftChild = newNode;
+		          return;
+	}
+} else {
+	firstNode = firstNode.rightChild;// if more then root node go right
+	if (firstNode == null) {
+		parent.rightChild = newNode;
+		return;
+	}
+}
+				}
+			}
+			}
+		} catch (ArrayIndexOutOfBoundsException d) {
+			size--;
+			System.out.println("You tried to enqueue, Sorry its full");
+		}
+	}
+
+	public node delete() {
+		node removeNode = null;
+		try {
+			if (size != 0) {
+				if (head == null) {
+					System.out.println("Queue is empty");
+
+				} else {
+					removeNode = head;
+					head = head.next;
+					head.previous = null;
+				}
+				size--;
+			}
+		} catch (ArrayIndexOutOfBoundsException d) {
+			System.out.println("out of size");
+		}
+		return removeNode;
+	}
+
+	public void print() {
+		node add = head;
+		if (add == null)
+			System.out.println("Queue is empty");
+		else
+			while (add != null) { // if any node exist
+				System.out.println("Employee: " + add.getFirstName()
+						+ add.getLastName() + add.getPosition()
+						+ add.getSalary() + add.getStartDate()
+						+ add.getAddress() + add.getCity() + add.getZip());
+				add = add.next;
+			}
+		System.out.println("");
+	}
+
+	public boolean isEmpty() { // empty method
+		return (head == null);
+	}
+
+	public boolean isFull() {
+		return (size == max);
+	}
+
+	public int size() { // to get the element in size
+		return size;
+	}
+
+	private void inOrderPrint(node add) {
+		if (add != null) {
+			inOrderPrint(add.leftChild); // first node will execute the left
+			System.out.println("Employee: " + add.getFirstName()
+					+ add.getLastName() + add.getPosition()
+					+ add.getSalary() + add.getStartDate()
+					+ add.getAddress() + add.getCity() + add.getZip());
+			inOrderPrint(add.rightChild); // right node will executed
+		}
+	}
+		public node findNode(int id) {
+			node firstNode = head;// initialize first node to root node
+			// While we haven't found the Node keep looking
+			size++;
+			while (firstNode.getId() != id) {
+				if (id < firstNode.getId()) {
+					// move node to the left
+					firstNode = firstNode.leftChild;
+					size++;
+				} else {
+					// move node to the right
+					firstNode = firstNode.rightChild;
+					size++;
+				}
+				if (firstNode == null){
+					 size = 0;
+			}
+			
+		}
+			return firstNode;
+	}
+}

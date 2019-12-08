@@ -1,0 +1,78 @@
+
+public class queueList {
+	
+	 queueNode front, rear;
+		int size;
+		
+		public void enqueue(String item) {  // enqueue the queue
+			queueNode newNode = new queueNode(item); 
+			try {
+				if(!isFull())
+				if (front == null) { // checking whether null exist in any element.
+					front = rear = newNode; 						
+                   size++;
+					} else {
+						rear.next = newNode;
+						newNode.previous = rear;
+						rear = newNode;
+						size++;
+					}
+			} catch (ArrayIndexOutOfBoundsException d) { 
+                      size--;
+                      System.out.println("You tried to enqueue, Sorry its full");
+			}
+		}
+
+		public queueNode dequeue() {
+			queueNode  removeNode = null;
+			try {
+				if(size!=0){
+				if(front == null)
+					System.out.println("Queue is empty");
+			      	
+				else if (front == rear){
+					removeNode = front;
+					front = rear = null;
+				}else{
+					removeNode = front;
+					front = front.next;
+					front.previous = null;
+				}
+				size--;
+			}
+			} catch (ArrayIndexOutOfBoundsException d) {
+				System.out.println("out of size");
+			}
+			return removeNode;
+		}
+
+		public boolean isEmpty() {
+			return (front == null);
+		}
+
+		public boolean isFull() {
+			return (size == 5);
+		}
+
+		public int size() { // to get the element in size
+			return size;
+		}
+
+		public void print() { // to print the
+			queueNode add = front;
+			if(add == null)
+				System.out.println("Queue is empty");
+				else 
+					while (add != null){
+						System.out.println("item: "+add.getData());
+						add = add.next;
+					}
+			System.out.println("");
+			}
+		public queueNode peek() {
+			return front;
+		}
+		}
+
+		
+

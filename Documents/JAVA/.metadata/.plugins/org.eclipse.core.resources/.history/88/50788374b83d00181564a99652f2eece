@@ -1,0 +1,153 @@
+package Final_Project;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import javax.swing.JLabel;
+
+import java.awt.Font;
+
+public class Employees_Info {
+	private JFrame frame;
+	private JLabel id;
+	private JLabel firstName;
+	private JLabel lastName;
+	private JLabel position;
+	private JLabel salary;
+	private JLabel startDate;
+	private JLabel address;
+	private JLabel city;
+	private JLabel zip;
+	private JTextField textField1;
+	private JTextField textField2;
+	private JTextField textField3;
+	private JTextField textField4;
+	private JTextField textField5;
+	private JTextField textField6;
+	private JTextField textField7;
+	private JTextField textField8;
+	private JTextField textField9;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Employees_Info window = new Employees_Info();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Employees_Info() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setFont(new Font("Times New Roman", Font.BOLD, 15));
+		frame.setBounds(200, 200, 500, 400);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		
+		JLabel lblNewLabel1 = new JLabel("Employee Info");
+		lblNewLabel1.setFont(new Font("Times New Roman", Font.BOLD, 15));
+		lblNewLabel1.setBounds(189, 21, 117, 26);
+		frame.getContentPane().add(lblNewLabel1);
+		
+		JLabel id = new JLabel("Employee_Id");
+		id.setBounds(10, 72, 98, 14);
+		frame.getContentPane().add(id);
+		
+		JLabel firstName = new JLabel("First_Name");
+		firstName.setBounds(10, 97, 98, 14);
+		frame.getContentPane().add(firstName);
+		
+		textField1 = new JTextField();
+		textField1.setBounds(118, 69, 137, 20);
+		frame.getContentPane().add(textField1);
+		textField1.setColumns(10);
+		
+		textField2 = new JTextField();
+		textField2.setBounds(118, 94, 137, 20);
+		frame.getContentPane().add(textField2);
+		textField2.setColumns(10);
+		
+		JLabel lastName = new JLabel("Last_Name");
+		lastName.setBounds(10, 122, 98, 14);
+		frame.getContentPane().add(lastName);
+		
+		textField3 = new JTextField();
+		textField3.setBounds(118, 119, 137, 20);
+		frame.getContentPane().add(textField3);
+		textField3.setColumns(10);
+		
+		JLabel position = new JLabel("Position ");
+		position.setBounds(10, 147, 98, 14);
+		frame.getContentPane().add(position);
+		
+		textField4 = new JTextField();
+		textField4.setBounds(118, 144, 137, 20);
+		frame.getContentPane().add(textField4);
+		textField4.setColumns(10);
+		
+		JLabel salary = new JLabel("Salary");
+		salary.setBounds(10, 172, 98, 14);
+		frame.getContentPane().add(salary);
+		
+		JLabel startDate = new JLabel("Start_Date");
+		startDate.setBounds(10, 197, 98, 14);
+		frame.getContentPane().add(startDate);
+		
+		JLabel address = new JLabel("Address");
+		address.setBounds(10, 222, 98, 14);
+		frame.getContentPane().add(address);
+		
+		textField5 = new JTextField();
+		textField5.setBounds(118, 169, 137, 20);
+		frame.getContentPane().add(textField5);
+		textField5.setColumns(10);
+		
+		textField6 = new JTextField();
+		textField6.setBounds(118, 194, 137, 20);
+		frame.getContentPane().add(textField6);
+		textField6.setColumns(10);
+		
+		textField7 = new JTextField();
+		textField7.setBounds(118, 219, 137, 20);
+		frame.getContentPane().add(textField7);
+		textField7.setColumns(10);
+		
+		city = new JLabel("City");
+		city.setBounds(10, 247, 98, 14);
+		frame.getContentPane().add(city);
+		
+		zip = new JLabel("Zip");
+		zip.setBounds(10, 272, 98, 14);
+		frame.getContentPane().add(zip);
+		
+		textField8 = new JTextField();
+		textField8.setBounds(118, 244, 137, 20);
+		frame.getContentPane().add(textField8);
+		textField8.setColumns(10);
+		
+		textField9 = new JTextField();
+		textField9.setBounds(118, 269, 137, 20);
+		frame.getContentPane().add(textField9);
+		textField9.setColumns(10);
+		
+	}
+}

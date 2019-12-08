@@ -1,0 +1,70 @@
+package LinkedLists;
+
+import java.util.NoSuchElementException;
+
+public class linkedLists {
+		private link head;
+		private link last;
+
+		public linkedLists() {
+			head = null;
+			last = null;
+		}
+
+		// insert first method
+		public void insert(can data) {
+			link node = new link(data);
+			if (head != null) {
+				node = null;
+	
+			} else {
+				link nodeN = head;
+				while(nodeN.next != null){
+					nodeN = nodeN.next;
+				}
+				nodeN.next = node;
+				
+			}
+
+		}
+
+		// deletes element
+		public link delete() {
+			link temp = head;
+			if (isEmpty()) {
+				throw new NoSuchElementException();
+				// return null;
+			}
+			head = head.next;
+			return temp;
+		}
+
+		public boolean isEmpty() {
+			return head == null;
+		}
+
+		// prints out list
+		public void printList() {
+			link currentLink = head;
+			System.out.println("List: ");
+			while (currentLink != null) {
+				currentLink.printLink();
+				currentLink = currentLink.next;
+			}
+			System.out.println(" ");
+		}
+		
+		// peek first element
+		public link peek() {
+			if (!isEmpty()) {
+				return head;
+			} else
+				return null;
+
+		}
+
+	}
+
+
+	
+

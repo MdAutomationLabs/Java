@@ -1,0 +1,32 @@
+import java.time.LocalDateTime;
+import javax.swing.*;
+
+public class TimedResponseAhmed {
+
+	public static void main(String[] args) {
+		// Md Ahmed
+
+		LocalDateTime time1 = LocalDateTime.now();
+		int min1 = time1.getMinute();
+		int sec1 = time1.getSecond();
+		int totalSec1 = min1 * 60 + sec1;
+
+		JOptionPane.showConfirmDialog(null,
+				"Are you a closet Taylor Swift fan?");
+
+		LocalDateTime time2 = LocalDateTime.now();
+		int min2 = time2.getMinute();
+		int sec2 = time2.getSecond();
+		int totalSec2 = min2 * 60 + sec2;
+
+		int difference = (totalSec2 - totalSec1);
+		int differenceMin = difference / 60;
+		int differenceSec = difference % 60;
+		int totalSec = differenceMin + differenceSec;
+		
+		JOptionPane.showMessageDialog(null, "End seconds: " + totalSec2
+				+ "\nStart seconds: " + totalSec1 + "\nIt tooks " + totalSec
+				+ " seconds for you to answer.\nWas it a difficult decision?");
+	}
+
+}

@@ -1,0 +1,65 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+
+import java.awt.Font;
+
+import javax.swing.UIManager;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
+public class Calculator {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Calculator window = new Calculator();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Calculator() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setForeground(UIManager.getColor("CheckBox.light"));
+		frame.getContentPane().setFont(new Font("Tahoma", Font.BOLD, 11));
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnCalculation = new JButton("Calculation");
+		btnCalculation.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Total");
+			}
+		});
+		btnCalculation.setForeground(UIManager.getColor("Button.shadow"));
+		btnCalculation.setBackground(UIManager.getColor("Button.light"));
+		btnCalculation.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		btnCalculation.setBounds(179, 171, 89, 31);
+		frame.getContentPane().add(btnCalculation);
+	}
+}

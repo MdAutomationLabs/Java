@@ -1,0 +1,41 @@
+public class LinkedListQueueTesterAhmed {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		queueList queue = new queueList();
+		queue.enqueue("dog");
+		queue.enqueue("cat");
+		queue.enqueue("mouse");
+		queue.enqueue("pig");
+		queue.enqueue("bird");
+		System.out.println("All elements");
+		queue.print();
+		System.out.println("size: " + queue.size());
+		System.out.println("isFull: " + queue.isFull());
+
+		queue.enqueue("puppy"); // tried to enter new elements but its full
+
+		System.out.println("size: " + queue.size());
+
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("size: " + queue.size());
+		System.out.println("puppy is entered......");
+
+		queue.enqueue("puppy"); // puppy will be taken since I dequeued
+									// dog/front
+		System.out.println("size: " + queue.size());
+		
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("size: " + queue.size());
+		System.out.println("Front: " + queue.peek());
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("dequeue: " + queue.dequeue());
+		System.out.println("size: " + queue.size());
+		
+		
+	}
+
+}

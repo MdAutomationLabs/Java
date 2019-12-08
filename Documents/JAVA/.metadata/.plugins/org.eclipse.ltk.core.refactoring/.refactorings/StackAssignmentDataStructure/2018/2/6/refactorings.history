@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;StackAssignment.stackTester&apos; to &apos;stackTesterAhmed&apos;&#x0D;&#x0A;- Original project: &apos;StackAssignmentDataStructure&apos;&#x0D;&#x0A;- Original element: &apos;StackAssignment.stackTester&apos;&#x0D;&#x0A;- Renamed element: &apos;StackAssignment.stackTesterAhmed&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;stackTester&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;StackAssignment{stackTester.java[stackTester" matchStrategy="1" name="stackTesterAhmed" qualified="false" references="true" similarDeclarations="false" stamp="1517793194253" textual="false" version="1.0"/>
+</session>

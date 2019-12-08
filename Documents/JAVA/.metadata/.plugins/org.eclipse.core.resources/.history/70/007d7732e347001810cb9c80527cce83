@@ -1,0 +1,102 @@
+package Final_Project;
+
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.LinkedList;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class EmployeesGui extends JFrame {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	JTextArea  employeesTextArea = new JTextArea();
+	JLabel idLabel  = new JLabel ("ID: ");
+	JTextField idTextField  = new JTextField  (15);
+	JLabel FnameLabel  = new JLabel ("FirstName: ");
+	JTextField FnameTextField  = new JTextField  (15);
+	JLabel LnameLabel  = new JLabel ("LastName: ");
+	JTextField LnameTextField  = new JTextField  (15);
+	
+	JButton addButton = new JButton ("Add");
+	JButton updateButton = new JButton ("Update");
+	JButton deleteButton = new JButton ("Delete");
+	JButton exitButton = new JButton ("Exit");
+	
+	private LinkedList<node>employees = new LinkedList<node>();
+
+	public EmployeesGui(){
+		JPanel flow1Panel = new JPanel (new FlowLayout (FlowLayout.CENTER));
+		JPanel flow2Panel = new JPanel (new FlowLayout (FlowLayout.CENTER));
+		JPanel gridPanel = new JPanel (new GridLayout (2,1));
+		
+		employeesTextArea.setEditable(false);
+		
+		flow1Panel.add(idLabel);
+		flow1Panel.add(idTextField);
+		flow1Panel.add(FnameLabel);
+		flow1Panel.add(FnameTextField);
+		flow1Panel.add(LnameLabel);
+		flow1Panel.add(LnameTextField);
+		
+		flow2Panel.add(addButton);
+		flow2Panel.add(updateButton);
+		flow2Panel.add(deleteButton);
+		flow2Panel.add(exitButton);
+	
+		gridPanel.add (flow1Panel);
+		gridPanel.add (flow2Panel);
+		add (gridPanel, BorderLayout.NORTH);
+		add (employeesTextArea, BorderLayout.CENTER);
+		addButton.addActionListener(new ActionListener(){
+
+			public void actionPerformed(ActionEvent e) {
+				boolean isIDUnique = true;
+				for (node emp : employees ){
+						
+						if (emp.getId().compareToIgnoreCase(idTextField.getText()) == 0)
+							{
+							isIDUnique = false;
+							}
+					}
+				if (isIDUnique == false){
+				   JOptionPane.showMessageDialog(null, "Error: Id alreary exist" );
+				}else{
+					employees.add (new node (idTextField.getText(), 
+							FnameTextField.getText(),
+							LnameTextField.getText()));
+					employeesTextArea.setText("---");
+					for (node emp : employees ){
+						employeesTextArea.append(emp + "\n");
+					}
+				}	
+				
+			}
+			
+		});
+		
+	} 
+
+	public static void main(String[] args) {
+		
+		EmployeesGui app = new EmployeesGui();
+		app.setVisible(true);
+		app.setSize(700, 700);
+		app.setLocation(400, 400);
+	}
+
+}

@@ -1,0 +1,54 @@
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+public class TicketCounterFrame extends JFrame {
+	private static final long serialVersionUID = 1L;
+	final int FIELD_WIDTH = 10;
+	TicketCounter ticket;
+	JLabel statement = new JLabel("Enter how many tickets you'd like to purchase (1-6)");
+	JTextField ticketField = new JTextField(FIELD_WIDTH);
+	JButton purchaseTickets = new JButton("Purchase Tickets");
+	JLabel ticketBalance = new JLabel();
+	JLabel exception = new JLabel();
+
+	public TicketCounterFrame(TicketCounter b) {
+
+	ticket = b;
+	purchaseTicketsListener d = new purchaseTicketsListener();
+	purchaseTickets.addActionListener(d);
+
+	JPanel controlPanel = new JPanel();
+	controlPanel.add(statement);
+	controlPanel.add(ticketField);
+	controlPanel.add(purchaseTickets);
+	controlPanel.add(ticketBalance);
+	controlPanel.add(exception);
+	add(controlPanel);
+	setSize(600, 200);
+	}
+
+	class purchaseTicketsListener implements ActionListener {
+	
+	public void actionPerformed(ActionEvent e) {
+	String a = ticketField.getText();
+	try {
+	double purchaseTickets = Double.parseDouble(a);
+	double newTicketBalance = ticket.getTicketBalance() - purchaseTickets;
+	ticket.setTicketBalance(newTicketBalance);
+	ticketBalance.setText("Tickets Remaining: " + ticket.getTicketBalance());
+	} catch (NumberFormatException erd) {
+	exception.setText("Please enter a number only, purchase ticket amount (1-6)");
+	 
+	}
+
+	}
+
+	}
+	}
+

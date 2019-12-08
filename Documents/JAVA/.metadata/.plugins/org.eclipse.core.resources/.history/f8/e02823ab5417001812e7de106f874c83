@@ -1,0 +1,27 @@
+package LinkedLists;
+
+public class link {
+	private can callCan; // can class called here
+	link next;
+
+	/**
+	 * @param can
+	 */
+	public link(can can) { // Constructor 
+		this.callCan = can;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return callCan.toString();
+	}
+
+	public void printLink() {
+		System.out.println("{ " + callCan.toString() + "}");
+	}
+}

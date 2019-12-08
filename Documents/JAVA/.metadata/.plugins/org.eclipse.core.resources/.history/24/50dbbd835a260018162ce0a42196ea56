@@ -1,0 +1,81 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+
+import java.awt.Font;
+
+import javax.swing.UIManager;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+
+
+public class Calculator {
+
+	private JFrame frame;
+	private JTextField info;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Calculator window = new Calculator();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Calculator() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setForeground(UIManager.getColor("CheckBox.light"));
+		frame.getContentPane().setFont(new Font("Tahoma", Font.BOLD, 11));
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnCalculation = new JButton("Calculation");
+		btnCalculation.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Total");
+			}
+		});
+		btnCalculation.setForeground(UIManager.getColor("Button.shadow"));
+		btnCalculation.setBackground(UIManager.getColor("TabbedPane.shadow"));
+		btnCalculation.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		btnCalculation.setBounds(159, 171, 109, 31);
+		frame.getContentPane().add(btnCalculation);
+		
+		info = new JTextField();
+		info.setText("Hello get some fun");
+		info.setBounds(210, 28, 101, 50);
+		frame.getContentPane().add(info);
+		info.setColumns(10);
+		
+		JButton btnFirstNum = new JButton("first num");
+		btnFirstNum.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnFirstNum.setBounds(53, 97, 89, 23);
+		frame.getContentPane().add(btnFirstNum);
+	}
+}

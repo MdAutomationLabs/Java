@@ -1,0 +1,20 @@
+package LinkedLists;
+
+public class linkedListsAhmed {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		linkedLists list1 = new linkedLists();
+		can can1 = new can("BeansCompany", "Black Beans", 12.33, 4.3);
+		can can2 = new can("SoupCompany", "Chicken", 12.44, 2.2);
+		can can3 = new can("FruitCompany", "Pears", 12.31, 1.4);
+		can can4 = new can("RandomCompany", "Random Can");
+		can4.setPrice(2.48);
+		can4.setSize(5.9);
+		System.out.println(can1.toString());
+		System.out.println(can2.toString());
+		System.out.println(can3.toString());
+		System.out.println(can4.toString());
+	}
+
+}

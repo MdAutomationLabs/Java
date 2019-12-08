@@ -1,0 +1,58 @@
+package LinkedLists;
+
+
+public class link {
+	private can callCan; // can class called here
+	link next;
+	/**
+	 * @param callCan
+	 * @param next
+	 */
+	public link(can callCan, link next) {
+		super();
+		this.callCan = callCan;
+		this.next = next;
+	}
+	/**
+	 * 
+	 */
+	public link() {
+	}
+	/**
+	 * @return the callCan
+	 */
+	public can getCallCan() {
+		return callCan;
+	}
+	/**
+	 * @param callCan the callCan to set
+	 */
+	public void setCallCan(can callCan) {
+		this.callCan = callCan;
+	}
+	/**
+	 * @return the next
+	 */
+	public link getNext() {
+		return next;
+	}
+	/**
+	 * @param next the next to set
+	 */
+	public void setNext(link next) {
+		this.next = next;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "link [callCan=" + callCan + ", next=" + next + "]";
+	}
+	
+
+
+	
+
+	
+}

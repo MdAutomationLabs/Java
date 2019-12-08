@@ -1,0 +1,15 @@
+import javax.swing.JFrame;
+
+
+public class TicketCounterViewer {
+
+	public static void main(String[] args) {
+		// Md Ahmed
+		TicketCounter b = new TicketCounter (1000);
+		 JFrame frame = new TicketCounterFrame(b);
+		
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setVisible(true);
+	}
+
+}

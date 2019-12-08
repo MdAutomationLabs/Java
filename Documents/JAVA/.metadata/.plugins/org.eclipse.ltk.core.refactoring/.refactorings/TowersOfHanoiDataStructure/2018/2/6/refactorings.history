@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;TowersOfHanoi.towersOfHanoiAhmed&apos; to &apos;towersOfHanoiTesterAhmed&apos;&#x0D;&#x0A;- Original project: &apos;TowersOfHanoiDataStructure&apos;&#x0D;&#x0A;- Original element: &apos;TowersOfHanoi.towersOfHanoiAhmed&apos;&#x0D;&#x0A;- Renamed element: &apos;TowersOfHanoi.towersOfHanoiTesterAhmed&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;towersOfHanoiAhmed&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;TowersOfHanoi{towersOfHanoiAhmed.java[towersOfHanoiAhmed" matchStrategy="1" name="towersOfHanoiTesterAhmed" qualified="false" references="true" similarDeclarations="false" stamp="1518019107445" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+
+public class TicketCounterAhmed {
+
+	public static void main(String[] args) {
+		
+		// Md Ahmed
+		int ticketForEach = 6;
+		int totalTicket = 75;
+		int remainningTicket = 75;
+		int ticketSold = 0;
+		int count = 0;
+		 System.out.print("Enter total ticket for each customer or -1 to finish: "); 
+		Scanner in = new Scanner(System.in);
+	   // System.out.println("Input an integer"); 
+				
+		 
+	    //process data until the sentinel is entered
+	 
+	    while (ticketForEach!= -1) 
+	     {
+	    	ticketForEach = in.nextInt();
+	    	if (ticketForEach != -1)
+	    	{
+	    		if (ticketSold >= remainningTicket)
+	    		{
+	    		ticketSold = ticketSold + ticketForEach;
+	    		remainningTicket = totalTicket - ticketSold;
+	    		count++;
+	    	}else
+	    		{
+	    	System.out.println("You have only "+remainningTicket);
+	    		}
+	    	}else
+	    	    {
+	    		System.out.println("You can't buy more tahn six tickets. We have only "+remainningTicket);
+	    	    }
+	    	}
+	    	System.out.println("total sold " +ticketSold+ " to " +count+ " customer.");
+	    	System.out.println("Remaing ticket" +remainningTicket);
+	    }
+	
+	    	
+
+	}
+
+}

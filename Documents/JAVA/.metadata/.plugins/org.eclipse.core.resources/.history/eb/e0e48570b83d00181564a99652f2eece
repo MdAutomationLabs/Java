@@ -1,0 +1,12 @@
+package Final_Project;
+
+public class EmpInfoAhmedTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		data employee = new data();
+		employee.insert(21, jhon, last, pos, 21000, 12-12-12, 44th st, west dem, 34543);
+		employee.print();
+	}
+
+}
